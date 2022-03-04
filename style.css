@@ -108,8 +108,6 @@ form .txt-field {
   width: 137px;
   color: #adadad;
   cursor: pointer;
-  position: relative;
-  left: 182px;
 }
 
 .lupa:hover {
@@ -149,4 +147,23 @@ input[type="submit"]:hover {
 
 .daftar a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  .center {
+    width: 290px;
+  }
+
+  .txt-field input {
+    position: relative;
+    left: 15%;
+  }
+
+  .txt-field label {
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translateY(-50%);
+    width: 86%;
+  }
 }
