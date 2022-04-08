@@ -63,17 +63,20 @@ form .txt-field {
   outline: none;
   position: relative;
   left: 8%;
+  font-family: "Poppins";
 }
 
-.txt-field label {
+.txt-field input::placeholder {
   position: absolute;
   top: 50%;
-  left: 9%;
+  left: 5px;
   color: #adadad;
   transform: translateY(-50%);
   font-size: 16px;
   pointer-events: none;
   transition: 0.5s;
+  font-family: "Poppins";
+  font-size: 17px;
 }
 
 .txt-field span::before {
@@ -89,11 +92,6 @@ form .txt-field {
 
 .txt-field input:focus ~ i,
 .txt-field input:focus ~ i {
-  color: #00b0ff;
-}
-.txt-field input:focus ~ label,
-.txt-field input:focus ~ label {
-  top: -5px;
   color: #00b0ff;
 }
 
